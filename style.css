@@ -1,0 +1,41 @@
+:root {
+    --primary: rgb(88, 40, 244);
+    --primary-hover: rgb(69, 29, 200);
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.navitems>li>a {
+    @apply flex items-center gap-2 h-12 px-4 hover:bg-purple-600 rounded-lg
+}
+
+.button {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0 1rem;
+    padding-left: 1rem;
+    min-height: 3.3rem;
+    font-weight: 600;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+    transition-property: transform;
+    transition-duration: .3s;
+    color: antiquewhite;
+    background-color: var(--primary);
+}
+.button:hover {
+    background-color: var(--primary-hover);
+}
+.button:active {
+    transform: scale(0.95);
+}
