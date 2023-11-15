@@ -1,6 +1,7 @@
 :root {
     --primary: rgb(88, 40, 244);
     --primary-hover: rgb(69, 29, 200);
+    --font1: 'Lobster Two, sans-serif'
 }
 
 h1 {
@@ -8,10 +9,10 @@ h1 {
     line-height: 1.2;
     font-weight: bold;
     margin-bottom: 1rem;
+    font-family: var(--font1);
 }
-
-.navitems>li>a {
-    @apply flex items-center gap-2 h-12 px-4 hover:bg-purple-600 rounded-lg
+.font1 {
+    font-family: var(--font1);
 }
 
 .button {
@@ -38,4 +39,16 @@ h1 {
 }
 .button:active {
     transform: scale(0.95);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    background-color: white;
+    padding-bottom: 1rem;
 }

@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Awesome</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://img.icons8.com/material/48/000000/leopard.png" type="image/png">
 </head>
-<body>
+<body class="bg-gray-100">
 
 <header class="flex items-center justify-between px-8 bg-purple-800 h-20 text-white sticky top-0 z-50">
     <logo>
@@ -19,11 +22,11 @@
     </logo>
     <nav>
         <ul class="flex items-center">
-            <li><a class="text-white navitems" href="#">Home</a></li>
+            <li><a class="text-white  hover:bg-purple-700 px-4 py-2 rounded-lg flex items-center gap-2" href="#">Home</a></li>
             <li><a class="text-white hover:bg-purple-700 px-4 py-2 rounded-lg flex items-center gap-2" href="#">Create Post</a></li>
             <li><a class="text-white hover:bg-purple-700 px-4 py-2 rounded-lg flex items-center gap-2" href="#">
                 <img class="h-8 rounded-full object-cover bg-teal-200" src="https://img.icons8.com/doodle/48/bart-simpson.png" alt="bart-simpson"/>
-                Bart
+                Bert
                 <img class="w-5" src="https://img.icons8.com/ios/50/ffffff/expand-arrow--v1.png" alt="expand-arrow--v1"/>
             </a></li>
         </ul>
@@ -33,16 +36,46 @@
 <hero class="block bg-gray-600 text-white text-center bg-cover bg-center " style="background-image: url('https://live.staticflickr.com/7477/15505598449_a0323af576_b.jpg');">
     <div class="col-start-1 row-start-1 bg-gray-700 bg-opacity-40 w-full h-full"></div>
     <div class="col-start-1 row-start-1 py-24 px-10">
-        <h1>Awesome Photos</h1>
+        <h1 class="">Awesome Photos</h1>
         <p class="text-lg font-bold mb-6">Things do do with photos</p>
         <a class="button" href="#">Get Started</a>
     </div>
 </hero>
 
 <content class="grid grid-cols-3 max-w-7xl mx-auto mt-6">
-    <main class="col-span-2 mx-12 bg-blue-200">
-Posts
+    <main class="col-span-2 mx-12">
+        <article class="card">
+            <div class="flex place-items-center justify-between px-4 h-14">
+                <h3 class="text-lg font-bold max-w-sm truncate">Little Jedi</h3>
+                <div class=" text-sm text-gray-500">flickr @ <a href="#" class="hover:underline" target="blank">Master Yoda</a></div>
+            </div>
+            <figure>
+                <a href=""><img class="w-full" src="https://live.staticflickr.com/2810/33363097474_6191f6fbae_b.jpg" alt="pavement picture"></a>
+            </figure>
+            <div class="p-4 pb-2">
+                <a class="flex items-center gap-1 mb-4" href="">
+                    <img class="w-8 h-8 rounded-full" src="https://img.icons8.com/glyph-neue/64/happy.png" alt="happy"/>
+                    <span class="font-bold hover:underline" >Happy</span>
+                </a>
+                <p class="text-5xl mb-10 px-4 font1" >Metal and Stone Mix</p>
+                <div class="flex items-center gap-2 text-sm mb-5">
+                    <a class="bg-gray-200 rounded-full px-3 py-1 hover:bg-gray-500 hover:text-white" href="">Animals</a>
+                    <a class="bg-gray-200 rounded-full px-3 py-1 hover:bg-gray-500 hover:text-white" href="">Cute</a>
+                </div>
+                <div class="flex items-center justify-between text-sm px-2">
+                    <a class="font-bold hover:underline" href="#">Comments <span class="font-light text-gray-500 ml-2">3</span></a>
+                    <div class="flex items-center gap-4 [&>a:hover]:underline">
+                        <div class="flex items-center gap-1"><img class="w-5 -m-1" src="https://img.icons8.com/material/48/000000/leopard.png" alt="leopard">1</div>
+                        <a href="#">Like</a>
+                        <a href="#">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+
+        </article>
     </main>
+
     <aside class="col-span-1 mr-6 bg-red-200">
 Sidebar
     </aside>
